@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		.character-card {
+			text-align: center;
+			color: white;
+		}
+
+		.character-card h3 {
+			margin-top: 15px;
+			font-size: 24px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+
+		.character-card img {
+			width: 100%;
+			max-height: 500px;
+			object-fit: contain;
+			border-radius: 15px;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			background-color: black;
+			padding: 20px;
+			border-radius: 20px;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 400%;
+		}
+		.slider-slide {
+			width: 25%;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.slider-slide img {
+			width: 100%;
+			max-height: 500px;
+			object-fit: contain;
+			display: block;
+			margin: auto;
+			border-radius: 15px;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+		transform: translateX(0);
+		}
+
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-25%);
+		}
+
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-50%);
+		}
+
+		#slide4:checked ~ .slider-container {
+			transform: translateX(-75%);
+		}
+		#slide5:checked ~ .slider-container {
+		transform: translateX(0);
+		}
+
+		#slide6:checked ~ .slider-container {
+			transform: translateX(-25%);
+		}
+
+		#slide7:checked ~ .slider-container {
+			transform: translateX(-50%);
+		}
+
+		#slide8:checked ~ .slider-container {
+			transform: translateX(-75%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li><a href="https://zikra.id/"></a><strong>-Home-</strong></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://www.instagram.com/abdul_aziz_lamako?igsh=MTN4dGhtcmMxaDZ0aQ==" target="_blank">instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="img/ds/ds.jpg" class="full-width-image" alt="aot">
+			<h1 class="project-title">Dr. Stone</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / Dr. stone
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row align-items-center">
+					
+					<!-- FOTO ANIME -->
+					<div class="col-sm">
+						<img src="img/ds/posterds.jpg" 
+						alt="Anime Poster" 
+						style="width:100%; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.2);">
+					</div>
+
+					<!-- DETAIL ANIME -->
+					<div class="col-sm">
+						<h2 style="margin-bottom:20px;">Anime Details</h2>
+
+						<p><strong>Title:</strong> Dr. Stone</p>
+
+						<p><strong>Genre:</strong> Adventure, Sci-Fi, Comedy</p>
+
+						<p><strong>Release Year:</strong> 2019</p>
+
+						<p><strong>Studio:</strong> TMS Entertainment</p>
+
+						<p><strong>Episodes:</strong> 50+ Episodes</p>
+
+						<p><strong>Main Character:</strong> Senku Ishigami</p>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Sinopsi</h2>
+						<p>Dr. Stone bercerita tentang dunia yang tiba-tiba mengalami fenomena misterius yang mengubah seluruh manusia menjadi batu selama ribuan tahun. Setelah sekitar 3.700 tahun, seorang remaja jenius bernama Senku Ishigami berhasil bangkit dari batu dan menemukan bahwa peradaban manusia telah hancur total.
+						Dengan pengetahuan sains yang dimilikinya, Senku bertekad membangun kembali peradaban dari nol. Bersama teman-temannya, ia menciptakan berbagai teknologi seperti obat, listrik, alat komunikasi, hingga kendaraan menggunakan ilmu pengetahuan.
+						Anime ini menggabungkan petualangan, sains, dan strategi, sambil memperlihatkan perjuangan manusia untuk bertahan hidup dan memulai kembali dunia modern.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Visual Anime</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							<input type="radio" name="slider" id="slide4" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="img/ds/ds4.png" alt="ds4">
+								</div>
+								<div class="slider-slide">
+									<img src="img/ds/ds2.jpg"  alt="ds2">
+								</div>
+								<div class="slider-slide">
+									<img src="img/ds/ds3.jpg"  alt="ds3">
+								</div>
+								<div class="slider-slide">
+									<img src="img/ds/ds1.jpg" alt="ds1">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+								<label for="slide4" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm">
+							<h2>Karakter Favorit</h2>
+							<div class="project-slider">
+								<input type="radio" name="slider" id="slide5" class="slider-toggle" checked>
+								<input type="radio" name="slider" id="slide6" class="slider-toggle">
+								<input type="radio" name="slider" id="slide7" class="slider-toggle">
+								<input type="radio" name="slider" id="slide8" class="slider-toggle">
+								
+								<div class="slider-container">
+									<div class="slider-slide">
+										<div class="character-card">
+											<img src="img/ds/senku.jpg" alt="senku">
+											<h3>Senku Ishigami</h3>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="character-card">
+											<img src="img/ds/kohaku.jpg" alt="kohaku">
+											<h3>Kohaku</h3>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="character-card">
+											<img src="img/ds/Suika.jpg" alt="Suika">
+											<h3>Suika</h3>
+										</div>
+									</div>
+									<div class="slider-slide">
+										<div class="character-card">
+											<img src="img/ds/Yuzuriha.jpg" alt="Yuzuriha">
+											<h3>Yuzuriha</h3>
+										</div>
+									</div>
+								</div>
+								
+								<div class="slider-controls">
+									<label for="slide5" class="slider-dot"></label>
+									<label for="slide6" class="slider-dot"></label>
+									<label for="slide7" class="slider-dot"></label>
+									<label for="slide8" class="slider-dot"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f79699939e96998d9699829bb7909a969e9bd994989a">[email&#160;protected]</a></h2>
+			<p>designed & developed by Abdul Aziz Lamako</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>
